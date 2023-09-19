@@ -11,9 +11,8 @@ public class AppConfig {
         helloWorld.setMessage("Hello World!");
         return helloWorld;
     }
+ 
     @Bean("catBean")
     @Scope("prototype")
-    public Cat getCatBean() {
-        return new Cat();
-    }
+    public Cat getCatBean() { return new Cat(); }
 }
